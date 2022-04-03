@@ -9,6 +9,9 @@ public class TextDocument : ArchiveDocument
     [TextArea(30, 50)]
     public string documentText = "";
 
+    [TextArea(1, 5)]
+    public string tagOverride = "";
+
     private string Redact(int visitTimes, string text)
     {
         // convert `xx` into tags
@@ -18,7 +21,7 @@ public class TextDocument : ArchiveDocument
 
     public override string GetSearchIndex()
     {
-        return documentTitle + " " + documentText;
+        return (tagOverride == "")? documentTitle + " " + documentText : tagOverride;
     }
 
     public override void SwapIn(DocumentDisplayController controller)
