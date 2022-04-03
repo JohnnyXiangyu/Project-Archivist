@@ -7,4 +7,10 @@ using UnityEngine.UI;
 public class ImageDocument : ArchiveDocument
 {
     public Image documentImage;
+
+    public override void SwapIn(DocumentDisplayController controller)
+    {
+        controller.SetTitle(documentTitle);
+        controller.SetContent(documentImage);
+    }
 }
