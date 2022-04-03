@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Text.RegularExpressions;
 
-public class ArchiveDocument : ScriptableObject
+public abstract class ArchiveDocument : ScriptableObject
 {
     public string documentName = "";
 
@@ -12,4 +12,6 @@ public class ArchiveDocument : ScriptableObject
     {
         return documentName;
     }
+
+    public abstract void SwapIn(DocumentDisplayController controller);
 }

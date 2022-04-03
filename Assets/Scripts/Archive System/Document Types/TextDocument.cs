@@ -21,6 +21,12 @@ public class TextDocument : ArchiveDocument
         return documentName + " " + documentText;
     }
 
+    public override void SwapIn(DocumentDisplayController controller)
+    {
+        // TODO: implement
+        throw new System.NotImplementedException();
+    }
+
     public string GetName(int visitTimes)
     {
         return Redact(visitTimes, documentName);
