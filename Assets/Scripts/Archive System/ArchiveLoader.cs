@@ -22,7 +22,7 @@ public class ArchiveLoader : MonoBehaviour
         {
             ArchiveRecord newRecord = new ArchiveRecord();
             newRecord.doc = doc;
-            newRecord.fullText = doc.documentName + " " + doc.documentText;
+            newRecord.fullText = doc.GetSearchIndex();
 
             allDocuments.Add(newRecord.fullText, newRecord);
 

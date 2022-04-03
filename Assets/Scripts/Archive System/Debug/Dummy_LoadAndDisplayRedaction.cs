@@ -11,6 +11,6 @@ public class Dummy_LoadAndDisplayRedaction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textbox.text = doc.GetContent(0);
+        // textbox.text = doc.GetContent(0);
     }
 }
