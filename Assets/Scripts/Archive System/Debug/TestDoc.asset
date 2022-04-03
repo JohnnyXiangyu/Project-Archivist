@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eb272e7bd8a8034abea5ff26d83ad0c, type: 3}
+  m_Script: {fileID: 11500000, guid: b8f635dce265c6842bef9c5f3317194a, type: 3}
   m_Name: TestDoc
   m_EditorClassIdentifier: 
-  documentName: redact test
-  documentText: 'something,
-
-    soemthing `0`but this section should be redacted`/`'
+  titleBox: {fileID: 0}
+  textContentCanvas: {fileID: 0}
+  imageContentCanvas: {fileID: 0}

@@ -10,37 +10,36 @@ public class DocumentDisplayController : MonoBehaviour
     TextMeshProUGUI titleBox = null;
 
     [SerializeField]
-    Canvas textContentCanvas = null;
+    TextMeshProUGUI textContentCanvas = null;
     [SerializeField]
-    Canvas imageContentCanvas = null;
+    Image imageContentCanvas = null;
 
     public int swapCount { get; private set; }
 
     public void SetTitle(string title)
     {
         swapCount++;
-        titleBox.text = title;
+        if (titleBox)
+            titleBox.text = title;
     }
 
     public void SetContent(string textContent)
     {
         TurnOffAllCanvas();
-        textContentCanvas.gameObject.SetActive(true);
-
-        // TODO: put content in text content canvas
+        textContentCanvas?.gameObject.SetActive(true);
+        textContentCanvas.text = textContent;
     }
 
-    public void SetContent(Image imageContent)
+    public void SetContent(Sprite imageContent)
     {
         TurnOffAllCanvas();
         imageContentCanvas.gameObject.SetActive(true);
-
-        // TODO: put content in image content canvas
+        imageContentCanvas.sprite = imageContent;
     }
 
     private void TurnOffAllCanvas()
     {
-        textContentCanvas.gameObject.SetActive(false);
-        imageContentCanvas.gameObject.SetActive(false);
+        textContentCanvas?.gameObject.SetActive(false);
+        imageContentCanvas?.gameObject.SetActive(false);
     }
 }
