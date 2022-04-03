@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Archive Image", menuName = "ScriptableObjects/ArchiveImage")]
 public class ImageDocument : ArchiveDocument
 {
-    public Image documentImage;
+    public Sprite documentImage;
 
     public override void SwapIn(DocumentDisplayController controller)
     {
