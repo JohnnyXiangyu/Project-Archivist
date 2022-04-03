@@ -27,6 +27,7 @@ public class TextDocument : ArchiveDocument
     public override void SwapIn(DocumentDisplayController controller)
     {
         controller.SetTitle(GetName(controller.swapCount));
+        controller.SetContent(GetContent(controller.swapCount));
     }
 
     public string GetName(int visitTimes)
