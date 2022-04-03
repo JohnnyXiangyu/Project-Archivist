@@ -29,4 +29,14 @@ public class ArchiveLoader : MonoBehaviour
             Debug.Log(doc.documentTitle);
         }
     }
+
+    ArchiveRecord Search(string query)
+    {
+        foreach(KeyValuePair<string, ArchiveRecord> entry in allDocuments) {
+            if (entry.Key.Contains(query))
+            {
+                return entry.Value;
+            }
+        }
+    }
 }
