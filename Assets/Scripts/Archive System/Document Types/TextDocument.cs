@@ -18,18 +18,17 @@ public class TextDocument : ArchiveDocument
 
     public override string GetSearchIndex()
     {
-        return documentName + " " + documentText;
+        return documentTitle + " " + documentText;
     }
 
     public override void SwapIn(DocumentDisplayController controller)
     {
-        // TODO: implement
-        throw new System.NotImplementedException();
+        controller.SetTitle(GetName(controller.swapCount));
     }
 
     public string GetName(int visitTimes)
     {
-        return Redact(visitTimes, documentName);
+        return Redact(visitTimes, documentTitle);
     }
 
     public string GetContent(int visitTimes)

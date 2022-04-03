@@ -10,7 +10,7 @@ public class ImageDocument : ArchiveDocument
 
     public override void SwapIn(DocumentDisplayController controller)
     {
-        // TODO: implement
-        throw new System.NotImplementedException();
+        controller.SetTitle(documentTitle);
+        controller.SetContent(documentImage);
     }
 }

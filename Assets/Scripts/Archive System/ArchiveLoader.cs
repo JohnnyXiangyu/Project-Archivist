@@ -26,7 +26,7 @@ public class ArchiveLoader : MonoBehaviour
 
             allDocuments.Add(newRecord.fullText, newRecord);
 
-            Debug.Log(doc.documentName);
+            Debug.Log(doc.documentTitle);
         }
     }
 }

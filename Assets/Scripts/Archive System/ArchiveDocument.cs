@@ -6,11 +6,11 @@ using System.Text.RegularExpressions;
 
 public abstract class ArchiveDocument : ScriptableObject
 {
-    public string documentName = "";
+    public string documentTitle = "";
 
     public virtual string GetSearchIndex()
     {
-        return documentName;
+        return documentTitle;
     }
 
     public abstract void SwapIn(DocumentDisplayController controller);
