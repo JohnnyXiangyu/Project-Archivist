@@ -10,6 +10,7 @@ public class Pager : MonoBehaviour
 
     public void RefreshPage()
     {
+        displayBox.ForceMeshUpdate();
         displayBox.pageToDisplay = 1;
         UpdateIndicator();
     }

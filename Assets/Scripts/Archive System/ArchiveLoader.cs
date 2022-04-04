@@ -10,6 +10,8 @@ public class ArchiveLoader : MonoBehaviour
     Dictionary<string, HashSet<ArchiveDocument>> searchIndex = new Dictionary<string, HashSet<ArchiveDocument>>();
     Dictionary<ArchiveDocument, HashSet<string>> reverseIndex = new Dictionary<ArchiveDocument, HashSet<string>>();
 
+    public DocumentDisplayController displayController;
+
     public List<ArchiveDocument> archiveAll = new List<ArchiveDocument>();
 
     public List<ArchiveDocument> Search(string query)

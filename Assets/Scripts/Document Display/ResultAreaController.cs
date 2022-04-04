@@ -22,6 +22,8 @@ public class ResultAreaController : MonoBehaviour
 
     public void ShowResults(List<ArchiveDocument> resultDocuments)
     {
+        Clear();
+
         foreach (ArchiveDocument doc in resultDocuments)
         {
             if (results.Count >= displayLimit)
@@ -36,7 +38,7 @@ public class ResultAreaController : MonoBehaviour
             resultController.targetDoc = doc;
             
             // instantiate the result
-            newResult.transform.SetParent(transform);
+            newResult.transform.SetParent(transform, false);
             results.Add(newResult);
         }
     }
