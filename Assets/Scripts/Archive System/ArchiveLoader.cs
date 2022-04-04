@@ -11,9 +11,35 @@ public class ArchiveLoader : MonoBehaviour
         public string fullText;
     }
 
-    Dictionary<string, ArchiveRecord> allDocuments = new Dictionary<string, ArchiveRecord>();
+    
+    HashSet<char> removedCharacters = new HashSet<char>() { ',', '.', '/', '(', ')', '[', ']', '!', '@', '#', '$', '%', '^', '&', '*', ' ' };
 
-    // Start is called before the first frame update
+    Dictionary<string, ArchiveRecord> allDocuments = new Dictionary<string, ArchiveRecord>();
+    Dictionary<string, List<ArchiveDocument>> searchIndex = new Dictionary<string, List<ArchiveDocument>>();
+
+    public List<ArchiveDocument> Search(string query, int limit = -1)
+    {
+        List<ArchiveDocument> result = new List<ArchiveDocument>();
+
+        List<string> keywords = ExtractWords(query);
+
+        foreach (string word in keywords)
+        {
+            if (searchIndex.ContainsKey(word))
+            {
+                foreach (ArchiveDocument document in searchIndex[word])
+                {
+                    if (limit > 0 && result.Count > limit)
+                        return result;
+
+                    result.Add(document);
+                }
+            }
+        }
+
+        return result;
+    }
+
     void Start()
     {
         // load all archive documents
@@ -27,6 +53,40 @@ public class ArchiveLoader : MonoBehaviour
             allDocuments.Add(newRecord.fullText, newRecord);
 
             Debug.Log(doc.documentTitle);
+
+            // remove symbols, break up words, insert into search index
+            List<string> extractedWords = ExtractWords(doc.GetSearchIndex());
+            foreach (string word in extractedWords)
+            {
+                if (searchIndex.ContainsKey(word))
+                {
+                    searchIndex[word].Add(doc);
+                }
+                else
+                {
+                    searchIndex.Add(word, new List<ArchiveDocument>() { doc });
+                }
+            }
         }
+    }
+
+    List<string> ExtractWords(string source)
+    {
+        List<string> words = new List<string>();
+        words.Add("");
+
+        foreach (char c in source)
+        {
+            if (!removedCharacters.Contains(c))
+            {
+                words[words.Count - 1] += c;
+            }
+            else if (words[words.Count - 1] != "")
+            {
+                words.Add("");
+            }
+        }
+
+        return words;
     }
 }
