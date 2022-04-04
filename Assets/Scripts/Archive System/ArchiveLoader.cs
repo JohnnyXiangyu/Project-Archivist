@@ -4,36 +4,34 @@ using System.Linq;
 using UnityEngine;
 
 public class ArchiveLoader : MonoBehaviour
-{
-    struct ArchiveRecord
-    {
-        public ArchiveDocument doc;
-        public string fullText;
-    }
-
-    
+{    
     HashSet<char> removedCharacters = new HashSet<char>() { ',', '.', '/', '(', ')', '[', ']', '!', '@', '#', '$', '%', '^', '&', '*', ' ' };
 
-    Dictionary<string, ArchiveRecord> allDocuments = new Dictionary<string, ArchiveRecord>();
     Dictionary<string, List<ArchiveDocument>> searchIndex = new Dictionary<string, List<ArchiveDocument>>();
+    Dictionary<ArchiveDocument, HashSet<string>> reverseIndex = new Dictionary<ArchiveDocument, HashSet<string>>();
 
-    public List<ArchiveDocument> Search(string query, int limit = -1)
+    public List<ArchiveDocument> Search(string query)
     {
-        List<ArchiveDocument> result = new List<ArchiveDocument>();
+        List<ArchiveDocument> result = null;
 
         List<string> keywords = ExtractWords(query);
 
+        // THIS IS AND SEARCH
         foreach (string word in keywords)
         {
-            if (searchIndex.ContainsKey(word))
+            if (result == null)
             {
-                foreach (ArchiveDocument document in searchIndex[word])
+                if (searchIndex.ContainsKey(word))
                 {
-                    if (limit > 0 && result.Count > limit)
-                        return result;
-
-                    result.Add(document);
+                    foreach (ArchiveDocument document in searchIndex[word])
+                    {
+                        result = new List<ArchiveDocument>(searchIndex[word]);
+                    }
                 }
+            }
+            else
+            {
+                result.RemoveAll(x => !reverseIndex[x].Contains(word));
             }
         }
 
@@ -46,14 +44,6 @@ public class ArchiveLoader : MonoBehaviour
         var docs = Resources.LoadAll("Documents.Prod", typeof(ArchiveDocument)).Cast<ArchiveDocument>().ToArray();
         foreach (var doc in docs)
         {
-            ArchiveRecord newRecord = new ArchiveRecord();
-            newRecord.doc = doc;
-            newRecord.fullText = doc.GetSearchIndex();
-
-            allDocuments.Add(newRecord.fullText, newRecord);
-
-            Debug.Log(doc.documentTitle);
-
             // remove symbols, break up words, insert into search index
             List<string> extractedWords = ExtractWords(doc.GetSearchIndex());
             foreach (string word in extractedWords)
@@ -67,6 +57,10 @@ public class ArchiveLoader : MonoBehaviour
                     searchIndex.Add(word, new List<ArchiveDocument>() { doc });
                 }
             }
+
+            // insert reverse index
+            HashSet<string> wordSet = new HashSet<string>(extractedWords);
+            reverseIndex.Add(doc, wordSet);
         }
     }
 

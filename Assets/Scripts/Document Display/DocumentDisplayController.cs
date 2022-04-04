@@ -101,9 +101,9 @@ public class DocumentDisplayController : MonoBehaviour
         }
     }
 
-    public void InitiateSearch(string query, int resultLimit = -1)
+    public void InitiateSearch(string query)
     {
-        List<ArchiveDocument> searchResult = archiveLoader.Search(query, resultLimit); // this proxy function is only here due to mediator pattern ... so stupid 
+        List<ArchiveDocument> searchResult = archiveLoader.Search(query); // this proxy function is only here due to mediator pattern ... so stupid 
         searchResultArea.ShowResults(searchResult);
     }
 }
