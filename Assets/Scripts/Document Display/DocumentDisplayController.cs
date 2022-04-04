@@ -7,13 +7,7 @@ using TMPro;
 public class DocumentDisplayController : MonoBehaviour
 {
     [SerializeField]
-    TextMeshProUGUI titleBox = null;
-
-    [SerializeField]
     ArchiveLoader archiveLoader = null;
-
-    [SerializeField]
-    RectTransform screen;
 
     // canvases
     [SerializeField]
@@ -25,11 +19,15 @@ public class DocumentDisplayController : MonoBehaviour
 
     // view canvas
     [SerializeField]
+    TextMeshProUGUI viewTitleBox = null;
+    [SerializeField]
     TextMeshProUGUI viewTextDisplay = null;
     [SerializeField]
     Image viewImageDisplay = null;
     [SerializeField]
     Pager viewPager = null;
+    [SerializeField]
+    RectTransform imageReferencePort;
 
     // search canvas
     [SerializeField]
@@ -49,10 +47,13 @@ public class DocumentDisplayController : MonoBehaviour
 
     public void SetTitle(string title)
     {
+        currentState = DisplayState.VIEW;
+        Refresh();
+
         swapCount++;
 
-        if (titleBox)
-            titleBox.text = title;
+        if (viewTitleBox)
+            viewTitleBox.text = title;
     }
 
     public void SetContent(string textContent)
@@ -73,10 +74,10 @@ public class DocumentDisplayController : MonoBehaviour
         viewImageDisplay.SetNativeSize();
         float xFactor = 1;
         float yFactor = 1;
-        if (viewImageDisplay.rectTransform.sizeDelta.x > screen.sizeDelta.x)
-            xFactor = viewImageDisplay.rectTransform.sizeDelta.x / screen.sizeDelta.x;
-        if (viewImageDisplay.rectTransform.sizeDelta.y > screen.sizeDelta.y)
-            yFactor = viewImageDisplay.rectTransform.sizeDelta.y / screen.sizeDelta.y;
+        if (viewImageDisplay.rectTransform.sizeDelta.x > imageReferencePort.sizeDelta.x)
+            xFactor = viewImageDisplay.rectTransform.sizeDelta.x / imageReferencePort.sizeDelta.x;
+        if (viewImageDisplay.rectTransform.sizeDelta.y > imageReferencePort.sizeDelta.y)
+            yFactor = viewImageDisplay.rectTransform.sizeDelta.y / imageReferencePort.sizeDelta.y;
 
         Vector2 tempsize = viewImageDisplay.rectTransform.sizeDelta;
 
@@ -103,6 +104,12 @@ public class DocumentDisplayController : MonoBehaviour
         Refresh();
     }
 
+    public void GoToSearch()
+    {
+        currentState = DisplayState.SEARCH;
+        Refresh();
+    }
+
     public void Refresh()
     {
         TurnOffAllCanvases();
@@ -124,7 +131,16 @@ public class DocumentDisplayController : MonoBehaviour
     public void InitiateSearch(string query)
     {
         List<ArchiveDocument> searchResult = archiveLoader.Search(query); // this proxy function is only here due to mediator pattern ... so stupid 
-        searchResultArea.ShowResults(searchResult);
+        if (searchResult != null)
+            searchResultArea.ShowResults(searchResult);
+        else
+            Debug.Log("didn't find anything");
+    }
+
+    private void Start()
+    {
+        currentState = DisplayState.MENU;
+        Refresh();
     }
 
     private void Update()

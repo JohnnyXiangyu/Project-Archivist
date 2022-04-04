@@ -10,6 +10,8 @@ public class ArchiveLoader : MonoBehaviour
     Dictionary<string, HashSet<ArchiveDocument>> searchIndex = new Dictionary<string, HashSet<ArchiveDocument>>();
     Dictionary<ArchiveDocument, HashSet<string>> reverseIndex = new Dictionary<ArchiveDocument, HashSet<string>>();
 
+    public List<ArchiveDocument> archiveAll = new List<ArchiveDocument>();
+
     public List<ArchiveDocument> Search(string query)
     {
         List<ArchiveDocument> result = null;
@@ -41,8 +43,8 @@ public class ArchiveLoader : MonoBehaviour
     void Start()
     {
         // load all archive documents
-        var docs = Resources.LoadAll("Documents.Prod", typeof(ArchiveDocument)).Cast<ArchiveDocument>().ToArray();
-        foreach (var doc in docs)
+        // var docs = Resources.LoadAll("Documents.Prod", typeof(ArchiveDocument)).Cast<ArchiveDocument>().ToArray();
+        foreach (var doc in archiveAll)
         {
             List<string> extractedWords = ExtractWords(doc.GetSearchIndex());
 

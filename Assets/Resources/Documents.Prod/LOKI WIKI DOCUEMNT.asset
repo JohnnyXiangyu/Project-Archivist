@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: LOKI WIKI DOCUEMNT
+  m_EditorClassIdentifier: 
+  documentTitle: 'LOKI:'
+  documentText: ">> `1`Trickster God`/`\r\n>> Origin: `2`Norse Mythology`/`\r\n\r\n>>
+    `3`Shapeshifter`/`\r\n\t>> \u201CIn separate incidents appears in the form of
+    a `0`salmon`/`, a `0`mare`/`, a `0`fly`/`, and possibly an `0`elderly woman`/`.\u201D\r\n\r\n>>
+    NOTES:\r\n\t>> \u201CLoki's relation with the gods varies, sometimes assisting
+    the gods and sometimes behaving maliciously towards them. Loki's positive relations
+    with the gods end with his role in `4`engineering the death of a god, leading
+    to his imprisonment and torment.`/` With the onset of `2`Ragnarok`/`, Loki is
+    foretold to `4`slip free from his bonds and to fight against the gods`/`.\u201D
+    \r\n\r\n\t\t\t\t\t\t<<\r\n"
+  tagOverride: Loki

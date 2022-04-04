@@ -6,7 +6,7 @@ public class ResultAreaController : MonoBehaviour
 {
     public DocumentDisplayController overallController = null;
 
-    public int displayLimit { get; private set; }
+    public int displayLimit;
 
     public GameObject resultPrefab = null;
 
