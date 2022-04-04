@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: COMEDIAN WIKI DOCUMENT
+  m_EditorClassIdentifier: 
+  documentTitle: COMEDIAN
+  documentText: ">>\r\n\r\nCOMEDIAN:\r\n\r\n\t>> Comedy performance dates back to
+    `0`antiquity (425 BC`/`), during a time where most notably, comic author and
+    playwright `0`Aristophanes wrote 40 ancient comedic plays,`/` 11 of which survived
+    and are still being performed. \r\n\r\n\t>> Among the works of English poet and
+    playwright `0`William`/` `1`Shakespeare`/`, are many comedies which are now considered
+    `2`\u201CShakespearean comedies\u201D`/` that are characterized by a `0`happy
+    ending`/`, usually involving `0`marriages between the unmarried characters`/`,
+    and a tone and style that is more `0`light-hearted`/` than `1`Shakespeare's other
+    plays.`/` \r\n \r\n\t>> In the modern era, `2`standup comedy`/` has its roots
+    in the `1`United Kingdom`/` in `0`1850 music hall theatres.`/` American standup
+    emerged in the corresponding `1`vaudeville theatre`/` from `0`the 1880s to the
+    1930s.`/`\r\n \r\r\n\t\t\t\t\t\t<<\r\n"
+  tagOverride: comedian
