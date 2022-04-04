@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: MORGAN LE FEY WIKI DOCUMENT
+  m_EditorClassIdentifier: 
+  documentTitle: 'MORGAN LE FEY:'
+  documentText: ">> Alternate Name: Morgan the Fairy, Morgana\r\n>> Origin: `0`English
+    Folklore`/`\r\n\r\n>> NOTES:\r\n\t>> \u201CHer prominence increased as legends
+    developed `0`over time, as did her moral ambivalence, and`/` in some texts there
+    is an evolutionary transformation of her to an `1`antagonist.`/`\u201D\r\n\t>>
+    \u201CA significant aspect in many of Morgan is the unpredictable duality of
+    her `0`nature, with`/` potential for both `1`good and evil.`/`\u201D\r\n\r\n\t\t\t\t\t\t<<\r"
+  tagOverride: Morgan Le Fey
