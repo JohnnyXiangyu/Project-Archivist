@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d6c63bdb2b13fa43875591f1ce5f158, type: 3}
-  m_Name: RAGNAROK
+  m_Name: RAGNAROK.PNG
   m_EditorClassIdentifier: 
   documentTitle: RAGNAROK.png
   documentImage: {fileID: 21300000, guid: e581c0fed290d7c488bda2169d2a7ab1, type: 3}

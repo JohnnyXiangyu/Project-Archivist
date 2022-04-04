@@ -796,6 +796,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 504491738048845506, guid: 894f8109cc24d2e499358542b7f782a2, type: 3}
+      propertyPath: m_Text
+      value: assignment
+      objectReference: {fileID: 0}
+    - target: {fileID: 504491738048845506, guid: 894f8109cc24d2e499358542b7f782a2, type: 3}
       propertyPath: m_CaretColor.b
       value: 0.36862746
       objectReference: {fileID: 0}
