@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: P1
+  m_EditorClassIdentifier: 
+  documentTitle: discovery
+  documentText: "I woke up today in my apa`0`rtment of six y`/`ears ago. No crumbing
+    walls, no busted pipes, no emergency rations or home-made wine in the pantry.
+    Pristine dry wall, a smoothly running shower, a fridge stocked with fresh produce.
+    `1`My mother,`/` alive.\r\n\r\nI threw up in my now pearl white toilet.\r\n\r\nNever
+    had I felt so disoriented and unstable in my life. I thought for sure I was dreaming,
+    but the bitter taste of bile in my mouth was all too real. \r\n\r\nSticking my
+    head outside,  I saw the world around me as suddenly unbroken as my home. It
+    would have been nostalgic had it not been so profoundly disturbing. \r\n\r\nI
+    got a call from `0`the agency after I failed to show up fo`/`r my assignment.
+    On their end, it was as if nothing had happened. \r\n\r\nAs if `0`this untouched`/`
+    world was the norm. \r\n\r\nI felt the pit in my stomach deepen when `0`boss's
+    name`/` scolded me for not showing up instead of screaming in confusion about
+    the `1`seemingly overnight restoration of `/` humanity.\r\n\r\nIn the end I called
+    out sick and got away with a slap on the wrist and `0`a week off`/`. I\u2019m
+    no use like this, after all. `0`A week`/` to get my head on straight. And `3`figure
+    out what`/` the hell has happened.\r\n"
+  tagOverride: 
