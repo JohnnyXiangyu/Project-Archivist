@@ -1384,7 +1384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1370691478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4074287877332792028}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2228,121 +2228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'a
-
-    a
-
-    a
-
-    a
-
-    a
-
-    a
-
-    aa
-
-    b
-
-    b
-
-    b
-
-    b
-
-    bb
-
-    b
-
-    b
-
-    b
-
-    b
-
-    ba
-
-    a
-
-    a
-
-    a
-
-    a
-
-    a
-
-    aa
-
-    b
-
-    b
-
-    b
-
-    a
-
-    b
-
-    a
-
-    b
-
-    a
-
-    b
-
-    ads
-
-    af
-
-    asc
-
-    xvz
-
-    wae
-
-    fa
-
-    xcvx
-
-    av
-
-    as
-
-    asdv
-
-    vcx
-
-    a
-
-
-    f
-
-    asf
-
-    av
-
-
-    zxc
-
-    vzx
-
-    vc
-
-    a
-
-    dsa
-
-    v
-
-    cx
-
-    vxz
-
-    cvzx
-
-    c'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c630e3c6e9f94e047bcc1e0541d00400, type: 2}
   m_sharedMaterial: {fileID: 5872299783362974997, guid: c630e3c6e9f94e047bcc1e0541d00400, type: 2}
@@ -2448,7 +2334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &5826541473689412054
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2601,7 +2487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8022613411434462327
 MonoBehaviour:
   m_ObjectHideFlags: 0
