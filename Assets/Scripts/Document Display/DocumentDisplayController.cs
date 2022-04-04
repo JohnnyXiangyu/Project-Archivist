@@ -12,6 +12,9 @@ public class DocumentDisplayController : MonoBehaviour
     [SerializeField]
     ArchiveLoader archiveLoader = null;
 
+    [SerializeField]
+    RectTransform screen;
+
     // canvases
     [SerializeField]
     Canvas menuCanvas = null;
@@ -65,6 +68,20 @@ public class DocumentDisplayController : MonoBehaviour
         TurnOffAllDisplays();
         viewImageDisplay.gameObject.SetActive(true);
         viewImageDisplay.sprite = imageContent;
+
+        // image resize
+        viewImageDisplay.SetNativeSize();
+        float xFactor = 1;
+        float yFactor = 1;
+        if (viewImageDisplay.rectTransform.sizeDelta.x > screen.sizeDelta.x)
+            xFactor = viewImageDisplay.rectTransform.sizeDelta.x / screen.sizeDelta.x;
+        if (viewImageDisplay.rectTransform.sizeDelta.y > screen.sizeDelta.y)
+            yFactor = viewImageDisplay.rectTransform.sizeDelta.y / screen.sizeDelta.y;
+
+        Vector2 tempsize = viewImageDisplay.rectTransform.sizeDelta;
+
+        tempsize.x /= Mathf.Max(xFactor, yFactor);
+        tempsize.y /= Mathf.Max(xFactor, yFactor);
     }
 
     private void TurnOffAllDisplays()
@@ -108,5 +125,13 @@ public class DocumentDisplayController : MonoBehaviour
     {
         List<ArchiveDocument> searchResult = archiveLoader.Search(query); // this proxy function is only here due to mediator pattern ... so stupid 
         searchResultArea.ShowResults(searchResult);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GoBack();
+        }
     }
 }
