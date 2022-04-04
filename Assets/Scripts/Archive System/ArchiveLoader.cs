@@ -40,7 +40,6 @@ public class ArchiveLoader : MonoBehaviour
         return result;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         // load all archive documents
