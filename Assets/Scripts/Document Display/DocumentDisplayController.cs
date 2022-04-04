@@ -130,6 +130,8 @@ public class DocumentDisplayController : MonoBehaviour
 
     public void InitiateSearch(string query)
     {
+        searchResultArea.Clear();
+
         List<ArchiveDocument> searchResult = archiveLoader.Search(query); // this proxy function is only here due to mediator pattern ... so stupid 
         if (searchResult != null)
             searchResultArea.ShowResults(searchResult);

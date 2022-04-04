@@ -10,23 +10,23 @@ public class ResultAreaController : MonoBehaviour
 
     public GameObject resultPrefab = null;
 
-    List<GameObject> results = new List<GameObject>();
+    // List<GameObject> results = new List<GameObject>();
 
     public void Clear()
     {
-        foreach (var child in results)
+        for (int i = 0; i < transform.childCount; i ++)
         {
-            Destroy(child);
+            Destroy(transform.GetChild(i).gameObject);
         }
+
+        // results = new List<GameObject>();
     }
 
     public void ShowResults(List<ArchiveDocument> resultDocuments)
     {
-        Clear();
-
         foreach (ArchiveDocument doc in resultDocuments)
         {
-            if (results.Count >= displayLimit)
+            if (transform.childCount >= displayLimit)
                 return;
 
             GameObject newResult = Instantiate(resultPrefab);
@@ -39,7 +39,7 @@ public class ResultAreaController : MonoBehaviour
             
             // instantiate the result
             newResult.transform.SetParent(transform, false);
-            results.Add(newResult);
+            // results.Add(newResult);
         }
     }
 }
