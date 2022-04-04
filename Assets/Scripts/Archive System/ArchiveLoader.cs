@@ -17,6 +17,29 @@ public class ArchiveLoader : MonoBehaviour
     Dictionary<string, ArchiveRecord> allDocuments = new Dictionary<string, ArchiveRecord>();
     Dictionary<string, List<ArchiveDocument>> searchIndex = new Dictionary<string, List<ArchiveDocument>>();
 
+    public List<ArchiveDocument> Search(string query, int limit = -1)
+    {
+        List<ArchiveDocument> result = new List<ArchiveDocument>();
+
+        List<string> keywords = ExtractWords(query);
+
+        foreach (string word in keywords)
+        {
+            if (searchIndex.ContainsKey(word))
+            {
+                foreach (ArchiveDocument document in searchIndex[word])
+                {
+                    if (limit > 0 && result.Count > limit)
+                        return result;
+
+                    result.Add(document);
+                }
+            }
+        }
+
+        return result;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
