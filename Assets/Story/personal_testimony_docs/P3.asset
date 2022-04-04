@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: P3
+  m_EditorClassIdentifier: 
+  documentTitle: wrong
+  documentText: "The sudden lack of their presence `0`on billboards or commercials
+    passed`/` over my head, but when I arrived to `0`work after my week of wallowing`/`
+    and found my assignment was some up-and -coming B-grade actress and not the snarky
+    trickster `3`comedian`/` I\u2019d been practically tied to for the past five
+    years, I was dumbfounded.\r\n\r\n\u201CWhat about `1`chief?\u201D`/` I asked
+    `0`boss\u2019s name.`/`\r\n\r\n`0`She`/` just raised an impatient eyebrow at
+    me, \u201CWhat? `1`Chief`/` who? Were you so sick you\u2019ve been hallucinating,
+    huh?\u201D \r\n\r\nThe rest of the day was a daze as I desperately searched for
+    a memory of proof of their existence `0`in the city, only to come up with`/`
+    nothing. Their `2`entire legacy`/`, erased. When I returned home from /my post/
+    I scoured the internet for solace, but it was like chasing a ghost. There was
+    no trace that they had `0`existed at all`/` let alone been `0`in the public sphere.`/`\r\n\r\nI
+    couldn\u2019t keep the panic from rising in me. `0`It felt as though I lost my`/`
+    grip on reality, I didn\u2019t know `0`what was`/` real `0`and what was`/` fake.
+    Next thing I knew I was screaming, overwhelmed with a distinct feeling of `2`wrongness
+    and despair. That this was not as it should be, but more than that, this is not
+    how it had been. That something was fundamentally wrong with the reality I was
+    living.`/`\r\n\r\nFor some reason or another, as I lay on my clean, carpeted
+    floor, staring dully at the ceiling, my mind settled on a certain answer. In
+    any other circumstances, it would have been ridiculous, but at that point, `0`I
+    had nothing left to lose. I had to accept the possibility that Chief was, and
+    had`/` never `2`quite been, a `/` human being.\r\n"
+  tagOverride: 

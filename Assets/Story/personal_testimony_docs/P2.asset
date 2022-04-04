@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: P2
+  m_EditorClassIdentifier: 
+  documentTitle: gone
+  documentText: "It\u2019s as if I've `2`lived a different life`/` than everyone
+    else on the planet. There has not been a single report, news broadcast, or even
+    a passing conversation on the street about `1`this sudden restoration.`/` I don\u2019t
+    know what to make of it. My dread only grows each passing day. I can\u2019t help
+    but think, `0` am I the only`/` one who remembers?\r\n\r\nThe back to back calamities,
+    the`0` ever mounting casualties, the very fabric`/` of society coming undone.
+    I would almost prefer to have things back to `0`the way they were`/`, rather
+    than this uncanny fever dream I seem to be living in. Day in and day out, nothing
+    but peace and mundanity, yet I find myself incapable of relaxing.\r\n\r\nI have
+    noticed one difference. They seem to have `2`disappeared.`/` \r\n"
+  tagOverride: 
