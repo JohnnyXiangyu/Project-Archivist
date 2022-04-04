@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: JESTER WIKI DOCUMENT
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: JESTER
+  documentText: ">> Modern Counterparts: Comedians\r\n\t>> A member of the household
+    of a nobleman or a monarch employed to entertain guests during the medieval and
+    Renaissance eras. \r\n\r\n\t>> NOTES:\r\n\t\t>> \u201CMuch of the entertainment
+    was performed in a comic style. Many jesters made contemporary jokes in word
+    or song about people or events well known to their audiences.\u201D\r\n"
+  tagOverride: fool

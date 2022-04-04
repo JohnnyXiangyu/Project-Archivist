@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: A MIDSUMMER NIGHT'S DREAM WIKI DOCUMENT
   m_EditorClassIdentifier: 
   documentTitle: "A MIDSUMMER NIGHT\u2019S DREAM (5.1) "
-  documentText: "\t>> `4`PUCK: `/`\r\n\t>> `1`Think but this, and all is mended:`/`\r\n\t>>
-    `1`That you have but slumbered here,`/`\r\n\t>> `1`While these visions did appear;`/`\r\n\t>>
-    And this weak and idle theme,\r\n\t>> No more yielding but a dream,\r\n\t>> Gentles,
-    `0`do not reprehend.`/`\r\n\t>> If you pardon, we will mend.\r\n\t>> And as I
-    am an `0`honest`/` `1`puck,`/`\r\n\t>> If we have unearned `3`luck`/`\r\n\t>>
-    `2`Now to 'scape the serpent's tongue,`/`\r\n\t>> We will make amends ere long,\r\n\t>>
-    Else the `1`puck a liar call.`/`\r\n\t>> So, good night unto you all.\r\n\t>>
-    Give me your hands if we be friends,\r\n\t>> `0`And`/` Robin `0`shall restore
-    amends.`/`\r\n\t\t>> [Exit]\r\n\r\n\t\t\t\t\t\t<<\r\n"
+  documentText: ">> PUCK:\r\n    \t>> `1`Think but this, and all is mended:`/`\r\n   
+    \t>> `1`That you have but slumbered here,`/`\r\n    \t>> `1`While these visions
+    did appear;`/`\r\n    \t>> And this weak and idle theme,\r\n    \t>> No more
+    yielding but a dream,\r\n    \t>> Gentles, do not reprehend.\r\n    \t>> If you
+    pardon, we will mend.\r\n    \t>> And as I am an honest puck,\r\n    \t>> If
+    we have unearned luck\r\n    \t>> Now to 'scape the serpent's tongue,\r\n   
+    \t>> We will make amends ere long,\r\n    \t>> Else the puck a liar call.\r\n   
+    \t>> So, good night unto you all.\r\n    \t>> Give me your hands if we be friends,\r\n\t>>
+    And Robin shall restore amends.\r\n\t\t>> [Exit]\r"
   tagOverride: Midsummer Shakespeare

@@ -1609,7 +1609,7 @@ MonoBehaviour:
   menuCanvas: {fileID: 545679887}
   searchCanvas: {fileID: 1359039293}
   viewCanvas: {fileID: 1370691480}
-  viewTitleBox: {fileID: 0}
+  viewTitleBox: {fileID: 1356444247}
   viewTextDisplay: {fileID: 4014144630596607565}
   viewImageDisplay: {fileID: 8626875778841480096}
   viewPager: {fileID: 8022613411434462327}

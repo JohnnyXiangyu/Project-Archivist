@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: ANASI WIKI DOCUMENT
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: ANASI
+  documentText: ">> Alternate Names: Ananse, Kwaku Ananse, Anancy, Ba Anansi, Kompa
+    Nanzi and/or Nanzi, Nancy, Aunt Nancy, and Sis' Nancy.\r\n>> Origin: Akan Folklore\r\n\r\n>>
+    NOTES:\r\n>>\u201CAnansi is often depicted in popular tales interacting with
+    the Supreme Being and other deities who frequently bestow him with temporary
+    supernatural powers, such as the ability to bring rain or to have other duties
+    performed for him\u201D\r\n\r\n>> \u201COften takes the shape of a spider and
+    is sometimes considered to be a god of all knowledge of stories. Taking the role
+    of trickster, Anansi is best known for his ability to outsmart and triumph over
+    more powerful opponents through his use of cunning, creativity and wit. \r\n\r\n>>
+    \u201CDespite taking on the role of the trickster, Anansi's actions and parables
+    often carry him as protagonist due to his ability to transform his apparent weaknesses
+    into virtues.\u201D\r\n"
+  tagOverride: anasi

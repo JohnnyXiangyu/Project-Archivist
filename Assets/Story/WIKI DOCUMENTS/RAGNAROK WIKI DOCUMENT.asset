@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: RAGNAROK WIKI DOCUMENT
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: RAGNAROK
+  documentText: ">> A series of events, including a great battle, foretold to lead
+    to the death of a number of great figures (including the gods Odin, Thor, and
+    Loki), natural disasters and the submersion of the world in water. \r\n\r\n>>
+    After these events, the world will resurface anew and fertile, the surviving
+    and returning gods will meet and the world will be repopulated by two human survivors\r\n"
+  tagOverride: ragnarok

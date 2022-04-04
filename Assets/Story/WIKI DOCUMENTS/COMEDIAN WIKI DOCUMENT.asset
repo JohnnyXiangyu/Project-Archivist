@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: COMEDIAN WIKI DOCUMENT
   m_EditorClassIdentifier: 
   documentTitle: COMEDIAN
-  documentText: ">>\r\n\r\nCOMEDIAN:\r\n\r\n\t>> Comedy performance dates back to
-    `0`antiquity (425 BC`/`), during a time where most notably, comic author and
-    playwright `0`Aristophanes wrote 40 ancient comedic plays,`/` 11 of which survived
-    and are still being performed. \r\n\r\n\t>> Among the works of English poet and
-    playwright `0`William`/` `1`Shakespeare`/`, are many comedies which are now considered
-    `2`\u201CShakespearean comedies\u201D`/` that are characterized by a `0`happy
-    ending`/`, usually involving `0`marriages between the unmarried characters`/`,
-    and a tone and style that is more `0`light-hearted`/` than `1`Shakespeare's other
-    plays.`/` \r\n \r\n\t>> In the modern era, `2`standup comedy`/` has its roots
-    in the `1`United Kingdom`/` in `0`1850 music hall theatres.`/` American standup
-    emerged in the corresponding `1`vaudeville theatre`/` from `0`the 1880s to the
-    1930s.`/`\r\n \r\r\n\t\t\t\t\t\t<<\r\n"
+  documentText: ">> Comedy performance dates back to antiquity (425 BC), during a
+    time where most notably, comic author and playwright Aristophanes wrote 40 ancient
+    comedic plays, 11 of which survived and are still being performed. Comedy as
+    a genre is quintessential to Ancient Greek dramatic genres, the others being
+    tragedy and the satyr plays.\r\n\r\n>> Among the works of English poet and playwright
+    William Shakespeare, are many comedies which are now considered \u201CShakespearean
+    comedies\u201D that are characterized by a happy ending, usually involving marriages
+    between the unmarried characters, and a tone and style that is more light-hearted
+    than Shakespeare's other plays. \r\n \r\n>> In the modern era, standup comedy
+    has its roots in the United Kingdom in 1850 music hall theatres. American standup
+    emerged in the corresponding vaudeville theatre from the 1880s to the 1930s."
   tagOverride: comedian
