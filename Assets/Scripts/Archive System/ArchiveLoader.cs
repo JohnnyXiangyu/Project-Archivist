@@ -11,7 +11,11 @@ public class ArchiveLoader : MonoBehaviour
         public string fullText;
     }
 
+    
+    HashSet<char> removedCharacters = new HashSet<char>() { ',', '.', '/', '(', ')', '[', ']', '!', '@', '#', '$', '%', '^', '&', '*', ' ' };
+
     Dictionary<string, ArchiveRecord> allDocuments = new Dictionary<string, ArchiveRecord>();
+    Dictionary<string, List<ArchiveDocument>> searchIndex = new Dictionary<string, List<ArchiveDocument>>();
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,40 @@ public class ArchiveLoader : MonoBehaviour
             allDocuments.Add(newRecord.fullText, newRecord);
 
             Debug.Log(doc.documentTitle);
+
+            // remove symbols, break up words, insert into search index
+            List<string> extractedWords = ExtractWords(doc.GetSearchIndex());
+            foreach (string word in extractedWords)
+            {
+                if (searchIndex.ContainsKey(word))
+                {
+                    searchIndex[word].Add(doc);
+                }
+                else
+                {
+                    searchIndex.Add(word, new List<ArchiveDocument>() { doc });
+                }
+            }
         }
+    }
+
+    List<string> ExtractWords(string source)
+    {
+        List<string> words = new List<string>();
+        words.Add("");
+
+        foreach (char c in source)
+        {
+            if (!removedCharacters.Contains(c))
+            {
+                words[words.Count - 1] += c;
+            }
+            else if (words[words.Count - 1] != "")
+            {
+                words.Add("");
+            }
+        }
+
+        return words;
     }
 }
