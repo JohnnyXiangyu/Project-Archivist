@@ -10,19 +10,25 @@ public class DocumentDisplayController : MonoBehaviour
     TextMeshProUGUI titleBox = null;
 
     [SerializeField]
+    ArchiveLoader archiveLoader = null;
+
+    // canvases
+    [SerializeField]
     Canvas menuCanvas = null;
     [SerializeField]
     Canvas searchCanvas = null;
     [SerializeField]
-    Canvas displayCanvas = null;
+    Canvas viewCanvas = null;
 
+    // view canvas
     [SerializeField]
-    TextMeshProUGUI textDisplay = null;
+    TextMeshProUGUI viewTextDisplay = null;
     [SerializeField]
-    Image imageDisplay = null;
+    Image viewImageDisplay = null;
 
+    // search canvas
     [SerializeField]
-    TMP_InputField inputField = null;
+    ResultAreaController searchResultArea = null;
 
     enum DisplayState
     {
@@ -47,28 +53,28 @@ public class DocumentDisplayController : MonoBehaviour
     public void SetContent(string textContent)
     {
         TurnOffAllDisplays();
-        this.textDisplay?.gameObject.SetActive(true);
-        this.textDisplay.text = textContent;
+        this.viewTextDisplay?.gameObject.SetActive(true);
+        this.viewTextDisplay.text = textContent;
     }
 
     public void SetContent(Sprite imageContent)
     {
         TurnOffAllDisplays();
-        imageDisplay.gameObject.SetActive(true);
-        imageDisplay.sprite = imageContent;
+        viewImageDisplay.gameObject.SetActive(true);
+        viewImageDisplay.sprite = imageContent;
     }
 
     private void TurnOffAllDisplays()
     {
-        textDisplay?.gameObject.SetActive(false);
-        imageDisplay?.gameObject.SetActive(false);
+        viewTextDisplay?.gameObject.SetActive(false);
+        viewImageDisplay?.gameObject.SetActive(false);
     }
 
     private void TurnOffAllCanvases()
     {
         menuCanvas?.gameObject.SetActive(false);
         searchCanvas?.gameObject.SetActive(false);
-        displayCanvas?.gameObject.SetActive(false);
+        viewCanvas?.gameObject.SetActive(false);
     }
 
     public void GoBack()
@@ -90,14 +96,14 @@ public class DocumentDisplayController : MonoBehaviour
                 searchCanvas?.gameObject.SetActive(true);
                 break;
             case DisplayState.VIEW:
-                displayCanvas?.gameObject.SetActive(true);
+                viewCanvas?.gameObject.SetActive(true);
                 break;
         }
     }
 
-    private void Update()
+    public void InitiateSearch(string query, int resultLimit = -1)
     {
-        if (currentState == DisplayState.SEARCH)
-            inputField?.Select();
+        List<ArchiveDocument> searchResult = archiveLoader.Search(query, resultLimit); // this proxy function is only here due to mediator pattern ... so stupid 
+        searchResultArea.ShowResults(searchResult);
     }
 }

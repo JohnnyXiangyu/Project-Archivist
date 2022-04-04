@@ -28,9 +28,14 @@ public class ResultAreaController : MonoBehaviour
                 return;
 
             GameObject newResult = Instantiate(resultPrefab);
-            SearchResultController controller = newResult.GetComponent<SearchResultController>();
-            controller.SetTitle(doc.documentTitle);
-            controller.overallController = overallController;
+            SearchResultController resultController = newResult.GetComponent<SearchResultController>();
+            
+            // configure the result
+            resultController.SetTitle(doc.documentTitle);
+            resultController.overallController = overallController;
+            resultController.targetDoc = doc;
+            
+            // instantiate the result
             newResult.transform.SetParent(transform);
             results.Add(newResult);
         }
