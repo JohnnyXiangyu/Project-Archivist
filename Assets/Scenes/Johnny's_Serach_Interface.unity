@@ -1128,6 +1128,7 @@ MonoBehaviour:
   viewCanvas: {fileID: 1370691480}
   viewTextDisplay: {fileID: 4014144630596607565}
   viewImageDisplay: {fileID: 8626875778841480096}
+  viewPager: {fileID: 8022613411434462327}
   searchResultArea: {fileID: 1170176545}
 --- !u!4 &1186331836
 Transform:

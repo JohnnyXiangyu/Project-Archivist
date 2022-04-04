@@ -25,6 +25,8 @@ public class DocumentDisplayController : MonoBehaviour
     TextMeshProUGUI viewTextDisplay = null;
     [SerializeField]
     Image viewImageDisplay = null;
+    [SerializeField]
+    Pager viewPager = null;
 
     // search canvas
     [SerializeField]
@@ -53,8 +55,9 @@ public class DocumentDisplayController : MonoBehaviour
     public void SetContent(string textContent)
     {
         TurnOffAllDisplays();
-        this.viewTextDisplay?.gameObject.SetActive(true);
-        this.viewTextDisplay.text = textContent;
+        viewTextDisplay?.gameObject.SetActive(true);
+        viewTextDisplay.text = textContent;
+        viewPager.RefreshPage();
     }
 
     public void SetContent(Sprite imageContent)
