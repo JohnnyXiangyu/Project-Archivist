@@ -45,7 +45,7 @@ public class TextDocument : ArchiveDocument
         int visitTimes;
         string text;
 
-        string matchPattern = @"`(?<count>[0-9]+)`(?<text>.+)`/`"; // TODO: backtick might be escaped in regular expression
+        string matchPattern = @"`(?<count>[0-9]+)`(?<text>[^`]+)`/`"; // TODO: backtick might be escaped in regular expression
 
         public RedactContext(int visitCount, string inText)
         {
