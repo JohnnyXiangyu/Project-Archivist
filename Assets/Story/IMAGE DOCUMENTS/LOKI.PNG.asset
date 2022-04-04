@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6c63bdb2b13fa43875591f1ce5f158, type: 3}
   m_Name: LOKI.PNG
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentImage: {fileID: 0}
+  documentTitle: LOKI.png
+  documentImage: {fileID: 21300000, guid: 46ea74a1a3765b24f88c2f0a110d5172, type: 3}

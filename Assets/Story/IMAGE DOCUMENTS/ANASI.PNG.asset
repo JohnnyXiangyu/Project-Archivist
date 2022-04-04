@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6c63bdb2b13fa43875591f1ce5f158, type: 3}
   m_Name: ANASI.PNG
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentImage: {fileID: 0}
+  documentTitle: ANASI.png
+  documentImage: {fileID: 21300000, guid: 974bff93ec552eb4ca59672c9f49998e, type: 3}
