@@ -7,7 +7,7 @@ public class ArchiveLoader : MonoBehaviour
 {    
     HashSet<char> removedCharacters = new HashSet<char>() { ',', '.', '/', '(', ')', '[', ']', '!', '@', '#', '$', '%', '^', '&', '*', ' ' };
 
-    Dictionary<string, List<ArchiveDocument>> searchIndex = new Dictionary<string, List<ArchiveDocument>>();
+    Dictionary<string, HashSet<ArchiveDocument>> searchIndex = new Dictionary<string, HashSet<ArchiveDocument>>();
     Dictionary<ArchiveDocument, HashSet<string>> reverseIndex = new Dictionary<ArchiveDocument, HashSet<string>>();
 
     public List<ArchiveDocument> Search(string query)
@@ -44,8 +44,9 @@ public class ArchiveLoader : MonoBehaviour
         var docs = Resources.LoadAll("Documents.Prod", typeof(ArchiveDocument)).Cast<ArchiveDocument>().ToArray();
         foreach (var doc in docs)
         {
-            // remove symbols, break up words, insert into search index
             List<string> extractedWords = ExtractWords(doc.GetSearchIndex());
+
+            // remove symbols, break up words, insert into search index
             foreach (string word in extractedWords)
             {
                 if (searchIndex.ContainsKey(word))
@@ -54,7 +55,7 @@ public class ArchiveLoader : MonoBehaviour
                 }
                 else
                 {
-                    searchIndex.Add(word, new List<ArchiveDocument>() { doc });
+                    searchIndex.Add(word, new HashSet<ArchiveDocument>() { doc });
                 }
             }
 
@@ -79,6 +80,11 @@ public class ArchiveLoader : MonoBehaviour
             {
                 words.Add("");
             }
+        }
+
+        for (int i = 0; i < words.Count; i++)
+        {
+            words[i] = words[i].ToLower();
         }
 
         return words;
