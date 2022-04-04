@@ -12,6 +12,9 @@ public class DocumentDisplayController : MonoBehaviour
     [SerializeField]
     ArchiveLoader archiveLoader = null;
 
+    [SerializeField]
+    RectTransform screen;
+
     // canvases
     [SerializeField]
     Canvas menuCanvas = null;
@@ -25,6 +28,8 @@ public class DocumentDisplayController : MonoBehaviour
     TextMeshProUGUI viewTextDisplay = null;
     [SerializeField]
     Image viewImageDisplay = null;
+    [SerializeField]
+    Pager viewPager = null;
 
     // search canvas
     [SerializeField]
@@ -53,8 +58,9 @@ public class DocumentDisplayController : MonoBehaviour
     public void SetContent(string textContent)
     {
         TurnOffAllDisplays();
-        this.viewTextDisplay?.gameObject.SetActive(true);
-        this.viewTextDisplay.text = textContent;
+        viewTextDisplay?.gameObject.SetActive(true);
+        viewTextDisplay.text = textContent;
+        viewPager.RefreshPage();
     }
 
     public void SetContent(Sprite imageContent)
@@ -62,6 +68,20 @@ public class DocumentDisplayController : MonoBehaviour
         TurnOffAllDisplays();
         viewImageDisplay.gameObject.SetActive(true);
         viewImageDisplay.sprite = imageContent;
+
+        // image resize
+        viewImageDisplay.SetNativeSize();
+        float xFactor = 1;
+        float yFactor = 1;
+        if (viewImageDisplay.rectTransform.sizeDelta.x > screen.sizeDelta.x)
+            xFactor = viewImageDisplay.rectTransform.sizeDelta.x / screen.sizeDelta.x;
+        if (viewImageDisplay.rectTransform.sizeDelta.y > screen.sizeDelta.y)
+            yFactor = viewImageDisplay.rectTransform.sizeDelta.y / screen.sizeDelta.y;
+
+        Vector2 tempsize = viewImageDisplay.rectTransform.sizeDelta;
+
+        tempsize.x /= Mathf.Max(xFactor, yFactor);
+        tempsize.y /= Mathf.Max(xFactor, yFactor);
     }
 
     private void TurnOffAllDisplays()
@@ -105,5 +125,13 @@ public class DocumentDisplayController : MonoBehaviour
     {
         List<ArchiveDocument> searchResult = archiveLoader.Search(query); // this proxy function is only here due to mediator pattern ... so stupid 
         searchResultArea.ShowResults(searchResult);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GoBack();
+        }
     }
 }
