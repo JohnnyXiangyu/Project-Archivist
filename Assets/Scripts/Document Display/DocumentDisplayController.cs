@@ -83,6 +83,8 @@ public class DocumentDisplayController : MonoBehaviour
 
         tempsize.x /= Mathf.Max(xFactor, yFactor);
         tempsize.y /= Mathf.Max(xFactor, yFactor);
+
+        viewImageDisplay.rectTransform.sizeDelta = tempsize;
     }
 
     private void TurnOffAllDisplays()

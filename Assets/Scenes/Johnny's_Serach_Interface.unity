@@ -2985,15 +2985,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'INSTRUCTIONS
 
+    - Enter your search query in ARCHIVE READER to look
+    for archives
+
     - Click to choose item to inspect
 
-    - Hit ESC to
-    go back to prev page
-
-    - Use arrow keys to traverse within long documents
-
-    -
-    Only limited results will show up'
+    - Use arrow keys or
+    scrollwheel to turn page'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c630e3c6e9f94e047bcc1e0541d00400, type: 2}
   m_sharedMaterial: {fileID: 5872299783362974997, guid: c630e3c6e9f94e047bcc1e0541d00400, type: 2}

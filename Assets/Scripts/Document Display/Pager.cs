@@ -22,12 +22,12 @@ public class Pager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow) && displayBox.pageToDisplay < displayBox.textInfo.pageCount)
+        if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.mouseScrollDelta.y < 0 ) && displayBox.pageToDisplay < displayBox.textInfo.pageCount)
         {
             displayBox.pageToDisplay++;
             UpdateIndicator();
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && displayBox.pageToDisplay > 1)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.mouseScrollDelta.y > 0) && displayBox.pageToDisplay > 1)
         {
             displayBox.pageToDisplay--;
             UpdateIndicator();
