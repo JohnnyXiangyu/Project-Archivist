@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: P5
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: fond
+  documentText: "\r\nWhen I finally did confront them, they simply laughed, loud
+    and clear, with a sort of cheeky smile.\r\n\r\n\u201CGetting warmer there, pipsqueak.\u201D\r\n\r\nEventually,
+    as our comradery became more apparent, I stopped asking and found peace with
+    that feeling of `3`all of eternity standing right next to me.`/`\r\n\r\nI think
+    it\u2019s about time I started asking again.\r\n"
+  tagOverride: confront, pipsqueak

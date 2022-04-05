@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: P7
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: creation
+  documentText: "The thought struck me today that the information I\u2019m gathering
+    might be useless in the grand scheme of things. The chances of them coming back,
+    of me finding actual concrete answers, seem slim to none. Some part of me acknowledges,
+    of course, `0`that if their absence is all that's required to equivocally save
+    the world, then it's`/` a small price to pay. \r\n\r\nYet, I still want to try
+    and understand.\r\n\r\nAnother part of me writhes with anger and frustration
+    over my inability to preserve their legacy\u2013to preserve them\u2013in any
+    way more concrete than\u2026 this. Surely not every impact they had here in `3`the
+    mortal realm`/` was inherently bad; something that ricocheted into our demise.
+    I know that cannot be. I myself am living `0`proof`/` that it cannot be. \r\n\r\nWhat
+    I\u2019m doing is selfish. It won\u2019t change things. But it\u2019s also something
+    I need to do, if I\u2019m ever going to rest easy in this world they created
+    for me.\r\n\r\n"
+  tagOverride: legacy
