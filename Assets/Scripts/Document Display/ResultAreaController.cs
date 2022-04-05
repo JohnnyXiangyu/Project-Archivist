@@ -33,7 +33,7 @@ public class ResultAreaController : MonoBehaviour
             SearchResultController resultController = newResult.GetComponent<SearchResultController>();
             
             // configure the result
-            resultController.SetTitle(doc.documentTitle);
+            resultController.SetTitle(doc.GetTitle(overallController));
             resultController.overallController = overallController;
             resultController.targetDoc = doc;
             
@@ -42,4 +42,6 @@ public class ResultAreaController : MonoBehaviour
             // results.Add(newResult);
         }
     }
+
+
 }
