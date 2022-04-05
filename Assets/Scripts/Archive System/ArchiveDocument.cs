@@ -13,5 +13,8 @@ public abstract class ArchiveDocument : ScriptableObject
         return documentTitle;
     }
 
-    public abstract void SwapIn(DocumentDisplayController controller);
+    public virtual void SwapIn(DocumentDisplayController controller)
+    {
+        controller.visitMap.Add(this);
+    }
 }

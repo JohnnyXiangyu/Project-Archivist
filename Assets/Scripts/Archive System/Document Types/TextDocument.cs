@@ -26,6 +26,7 @@ public class TextDocument : ArchiveDocument
 
     public override void SwapIn(DocumentDisplayController controller)
     {
+        base.SwapIn(controller);
         controller.SetTitle(GetName(controller.swapCount));
         controller.SetContent(GetContent(controller.swapCount));
     }

@@ -10,6 +10,7 @@ public class ImageDocument : ArchiveDocument
 
     public override void SwapIn(DocumentDisplayController controller)
     {
+        base.SwapIn(controller);
         controller.SetTitle(documentTitle);
         controller.SetContent(documentImage);
     }

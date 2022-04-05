@@ -33,6 +33,8 @@ public class DocumentDisplayController : MonoBehaviour
     [SerializeField]
     ResultAreaController searchResultArea = null;
 
+    public HashSet<ArchiveDocument> visitMap = new HashSet<ArchiveDocument>();
+
     enum DisplayState
     {
         MENU,
