@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: N2
+  m_EditorClassIdentifier: 
+  documentTitle: 'FROM: DECADENT DIGEST NEWS'
+  documentText: "Yesterday after leaving `0`the set of one of their`/` shows, local
+    comedian known as `0`Chief`/` was allegedly attacked by a crazed fan armed with
+    a knife. Thankfully, security `4`on scene prevented the`/` attacker from reaching
+    their target. One bodyguard was reported to `3`be injured while apprehending
+    the attacker, although the`/` severity of the wound they received is yet unknown.\r\n\r\nWhen
+    asked `0`about their feelings toward`/` the attack and possibility for others
+    to come, `0`chief`/` simply shrugged and dismissed our reporter.\r\n\r\nTheir
+    agent assured us, `0`\u201CThe security we\u2019ve got on the`/` issue is being
+    heightened. We\u2019re doing everything in our power to prevent another assault
+    like this from happening again.\u201D\r\n\r\nTRANSCRIBED ON `0`XXX, XX X0XX`/`\r\n"
+  tagOverride: comedian

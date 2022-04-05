@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
+  m_Name: N3
+  m_EditorClassIdentifier: 
+  documentTitle: 'FROM:  `0`XXXXXXX XXX XXXX`/`'
+  documentText: "\u201CWHO IS `0`CHIEF`/`? AN EXPOSE ON `0` THE NEW CHARMING SENSATION`/`\r\n\r\n`2`They\u2019re
+    brand`/` new to the scene, and yet it seems that capturing the hearts `1`of the
+    public with their endearing`/` sense of humor is but a breeze for this recently
+    uncovered talent.\r\n\r\nWhere `0` they come from and how they broke into the
+    scene`/` is still a mystery, but their naturally playful nature easily puts fans
+    at ease. \r\n\r\nMultiple attempts at taking a statement from the new star have
+    been made, but reporters have been unable to locate them outside of their stage
+    time.\r\n\r\nRegardless, fans and critics alike see nothing but `0`a shining`/`
+    future ahead for this young trickster, seemingly `1`gifted to us from out of
+    thin air.`/` \u201C\r\n\nTRANSCRIBED ON `0`XXX, XX X0XX\n"
+  tagOverride: trickster
