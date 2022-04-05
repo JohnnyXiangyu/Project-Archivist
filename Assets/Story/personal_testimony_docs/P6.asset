@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: P6
   m_EditorClassIdentifier: 
-  documentTitle: 
-  documentText: 
-  tagOverride: 
+  documentTitle: fault
+  documentText: "After spending so much time with them, I should have known that
+    this was all their fault.\r\n\r\nIt\u2019s not just `0`them and their accompanying
+    memories`/` that seem to be forgotten, but their entire identity, life, legacy
+    purposefully erased. \r\n\r\nAny records I find connected to them are corrupted
+    pieces of junk, or almost completely blacked out, as if `0`somebodys gone back
+    and redacted all proof of their existence.`/` \r\n\r\nOr maybe they were always
+    like that. Maybe they\u2019d been covering their tracks early on, preparing for
+    something like this. For someone like me to catch a drift, stick their nose where
+    it doesn't belong. It\u2019s driving me mad that at this rate, `2`I\u2019ll never
+    know for sure what happened to them, and why their nonexistence seems to have
+    saved the world.`/`\r\n"
+  tagOverride: erased, legacy
