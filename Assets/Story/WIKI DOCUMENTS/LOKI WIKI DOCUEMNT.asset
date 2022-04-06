@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff43b8820f57f1408fc2e28d05df753, type: 3}
   m_Name: LOKI WIKI DOCUEMNT
   m_EditorClassIdentifier: 
-  documentTitle: 'LOKI:'
+  documentTitle: LOKI
   documentText: ">> `1`Trickster God`/`\r\n>> Origin: `2`Norse Mythology`/`\r\n\r\n>>
     `3`Shapeshifter`/`\r\n\t>> \u201CIn separate incidents appears in the form of
     a `0`salmon`/`, a `0`mare`/`, a `0`fly`/`, and possibly an `0`elderly woman`/`.\u201D\r\n\r\n>>
